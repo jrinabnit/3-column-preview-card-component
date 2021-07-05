@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 15px;
+	color: hsl(0, 0%, 95%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Typography */
+
+h1 {
+	color: hsl(0, 0%, 95%);
+	font-family: 'Big Shoulders Display', cursive;
+	text-transform: uppercase;
+}
+
+p {
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+	background-color: hsl(0, 0%, 95%);
+	color: hsl(31, 77%, 52%);
+}
+
+/* Layout */
+
+.cars {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2em;
+}
+
+.container {
+	width: 270px;
+	height: 400;
+	padding: 1.5em;
+}
+
+.sedans {
+	background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+	background-color: hsl(179, 100%, 13%);
+}
+
+.btn {
+	font-family: inherit;
+	padding: 10px 20px;
+	margin-top: 1em;
+	margin-bottom: 1.25em;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.sedans .btn {
+	color: hsl(31, 77%, 52%);
+}
+
+.suvs .btn {
+	color: hsl(184, 100%, 22%);
+}
+
+.luxury .btn {
+	color: hsl(179, 100%, 13%);
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn:active {
+	background-color: inherit;
+	color: hsl(0, 0%, 95%);
+}
+
+.attribution {
+	margin-top: 1em;
+	color: black;
+}
+
+.attribution a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+/* Desktop View */
+
+@media (min-width: 820px) {
+	.cars {
+		flex-direction: row;
+	}
+}
