@@ -51,6 +51,7 @@ button {
 
 .sedans {
 	background-color: hsl(31, 77%, 52%);
+	border-radius: 10px 10px 0 0;
 }
 
 .suvs {
@@ -59,6 +60,7 @@ button {
 
 .luxury {
 	background-color: hsl(179, 100%, 13%);
+	border-radius: 0 0 10px 10px;
 }
 
 .btn {
@@ -109,5 +111,11 @@ button {
 @media (min-width: 820px) {
 	.cars {
 		flex-direction: row;
+	}
+	.sedans {
+		border-radius: 10px 0 0 10px;
+	}
+	.luxury {
+		border-radius: 0 10px 10px 0;
 	}
 }
